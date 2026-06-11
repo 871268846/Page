@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPA自动化需求管理平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+    <script>
+        function downloadFile(filename, filePath) {
+            // 创建一个隐藏的a标签
+            const link = document.createElement('a');
+            link.href = filePath;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white p-6">
+        <h1 class="text-3xl font-bold text-center">RPA自动化需求管理平台</h1>
+        <p class="text-center mt-2">规范RPA自动化需求管理，提升工作效率</p>
+    </header>
+    
+    <main class="container mx-auto p-6">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">RPA需求表单链接</h2>
+            <p class="text-gray-600 mb-6">为规范RPA自动化需求管理，现将相关表单链接公布如下：</p>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-medium text-blue-600 mb-2">需求收集表单</h3>
+                    <p class="text-gray-700 mb-3">用于提交新的RPA自动化需求（含流程描述、频次等）</p>
+                    <a 
+                        href="https://www.kdocs.cn/wo/sl/v11Deebl" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-colors"
+                    >
+                        访问需求收集表单
+                    </a>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-medium text-green-600 mb-2">需求评估查询表单</h3>
+                    <p class="text-gray-700 mb-3">用于查询已提交需求的评估状态，反馈附件，修改建议（待评估/需求可行/评估不可行等）</p>
+                    <a 
+                        href="https://www.kdocs.cn/etapps/query/q/x8fBMzUH" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded transition-colors"
+                    >
+                        访问需求评估查询表单
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">操作手册文档</h2>
+            <p class="text-gray-600 mb-4">相关操作手册文档如下，可直接点击打开：</p>
+            
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="text-lg font-medium text-gray-700 mb-2">SOP-RPA项目收集评估-操作手册</h3>
+                <p class="text-gray-600 mb-3">文档最后更新时间：2026-05-28</p>
+                <div class="flex flex-col space-y-3">
+                    <button 
+                        onclick="downloadFile('SOP-RPA项目收集评估-操作手册2026-05-28.docx', 'D:/桌面/解密文件/SOP-RPA项目收集评估-操作手册2026-05-28.docx')"
+                        class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded transition-colors flex items-center justify-center"
+                    >
+                        <i class="fas fa-download mr-2"></i>
+                        下载操作手册文档
+                    </button>
+                    <p class="text-sm text-gray-500">点击下载按钮将文件保存到您的电脑</p>
+                </div>
+            </div>
+            
+<div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-lg font-medium text-gray-700 mb-2">需求文档 - 空白</h3>
+                <p class="text-gray-600 mb-3">空白需求文档模板，用于填写新的RPA需求</p>
+                <div class="flex flex-col space-y-3">
+                    <button 
+                        onclick="downloadFile('需求文档 - 空白.docx', 'D:/桌面/解密文件/需求文档 - 空白.docx')"
+                        class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded transition-colors flex items-center justify-center"
+                    >
+                        <i class="fas fa-download mr-2"></i>
+                        下载需求文档空白模板
+                    </button>
+                    <p class="text-sm text-gray-500">点击下载按钮将文件保存到您的电脑</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer className="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>© 2026 RPA自动化需求管理平台 | 技术支持：IT部门</p>
+    </footer>
+</body>
+</html>
